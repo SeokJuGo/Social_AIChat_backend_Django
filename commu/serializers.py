@@ -19,15 +19,4 @@ class PostListSerializer(serializers.ModelSerializer):
         owner = TinyUserSerializer(read_only=True)
         model = Post
         fields = "__all__"
-        
-class TinyPostSerializer(serializers.ModelSerializer):
-    
-
-    class Meta:
-        model = Post
-        fields = (
-            "pk",
-            "create_at",
-            "update_at",
-        )
 
