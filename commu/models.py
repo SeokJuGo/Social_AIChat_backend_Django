@@ -12,7 +12,6 @@ class Post(models.Model):
     image = models.ImageField(
         blank=True,
         upload_to="post/%Y/%m/%d",
-        help_text="여기는 게시판들 이미지",
     )
     
     create_at = models.DateField(auto_now_add=True)
